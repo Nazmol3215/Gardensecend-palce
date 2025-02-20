@@ -7,8 +7,8 @@ import Home from '../Homes/Home';
 export default function Pages() {
     return (
         <div>
-            <Home/>
-<LeningWeb/>
+            <Home />
+            <LeningWeb />
 
             <Footer />
         </div>

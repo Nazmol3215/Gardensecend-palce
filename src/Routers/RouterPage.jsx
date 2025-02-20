@@ -6,6 +6,9 @@ import Contact from "../Homes/Contact";
 import Services from "../Homes/Services";
 import About from "../Homes/About";
 import Home from "../Homes/Home";
+import Buynow from "../Components/Buynow";
+import Details from "../Components/Details";
+
 
 
 
@@ -21,6 +24,8 @@ function RouterPage() {
         <Route path="/About" element={<About />} />
         <Route path="/Services" element={<Services />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path="/details" element={<Details />} />
+        <Route path="/Buynow" element={<Buynow />} />
       </Routes>
     </Router>
   );

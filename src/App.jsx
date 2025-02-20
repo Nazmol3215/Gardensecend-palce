@@ -1,6 +1,9 @@
 import './App.css';
 import RouterPage from './Routers/RouterPage';
 import ScrollToTopButton from './Layout/ScrollToTopButton';
+import SocialMediaIcons from './SocialMediaIcons/SocialMediaIcons';
+
+
 
 function App() {
 
@@ -8,6 +11,8 @@ function App() {
     <>
       <RouterPage />
       <ScrollToTopButton />
+      <SocialMediaIcons/>
+
     </>
   )
 }

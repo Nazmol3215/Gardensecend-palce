@@ -1,5 +1,6 @@
 import React from "react";
 import "./TrendingAndRecommended.css";
+import { useNavigate } from "react-router-dom";
 import picture1 from "../Images/i1.png";
 import picture2 from "../Images/i13.png";
 import picture3 from "../Images/i2png.jpg";
@@ -26,7 +27,13 @@ import picture14 from "../Images/i19.png";
 
 
 
-const TrendingAndRecommended = () => {
+const TrendingAndRecommended = ({scrollToOrder}) => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    scrollToOrder(); // এটা স্ক্রোল করবে OrderSubmit কম্পোনেন্টে
+  };
+
+
   return (
     <div className="product-sections">
       {/* Trending Products */}
@@ -39,6 +46,11 @@ const TrendingAndRecommended = () => {
               alt="Wireless Earbuds"
               className="product-image"
             />
+            <div className="hover-buttons">
+            <button onClick={() => navigate("/Details")}>View Details</button>
+          <button onClick={handleClick}>Buy Now</button>
+
+            </div>
             <div className="product-info">
               <h4>Wireless Earbuds</h4>
 
@@ -47,10 +59,14 @@ const TrendingAndRecommended = () => {
           </div>
           <div className="product-card" >
             <img
-              src= {picture2}
+              src={picture2}
               alt="Smartwatch"
               className="product-image"
             />
+            <div className="hover-buttons">
+              <button onClick={() => navigate("/Details")}>View Details</button>
+          <button onClick={handleClick}>Buy Now</button>
+            </div>
             <div className="product-info">
               <h4>Smartwatch</h4>
               <p>$100</p>
@@ -58,10 +74,15 @@ const TrendingAndRecommended = () => {
           </div>
           <div className="product-card">
             <img
-              src= {picture3}
+              src={picture3}
               alt="Smartwatch"
               className="product-image"
             />
+            <div className="hover-buttons">
+              <button onClick={() => navigate("/Details")}>View Details</button>
+          <button onClick={handleClick}>Buy Now</button>
+
+            </div>
             <div className="product-info">
               <h4>Smartwatch</h4>
               <p>$100</p>
@@ -73,6 +94,10 @@ const TrendingAndRecommended = () => {
               alt="Smartwatch"
               className="product-image"
             />
+            <div className="hover-buttons">
+              <button onClick={() => navigate("/Details")}>View Details</button>
+          <button onClick={handleClick}>Buy Now</button>
+            </div>
             <div className="product-info">
               <h4>Smartwatch</h4>
               <p>$100</p>
@@ -80,10 +105,14 @@ const TrendingAndRecommended = () => {
           </div>
           <div className="product-card">
             <img
-              src= {picture4}
+              src={picture4}
               alt="Smartwatch"
               className="product-image"
             />
+            <div className="hover-buttons">
+              <button onClick={() => navigate("/Details")}>View Details</button>
+          <button onClick={handleClick}>Buy Now</button>
+            </div>
             <div className="product-info">
               <h4>Smartwatch</h4>
               <p>$100</p>
@@ -91,10 +120,14 @@ const TrendingAndRecommended = () => {
           </div>
           <div className="product-card">
             <img
-              src= {picture4}
+              src={picture4}
               alt="Smartwatch"
               className="product-image"
             />
+            <div className="hover-buttons">
+              <button onClick={() => navigate("/Details")}>View Details</button>
+          <button onClick={handleClick}>Buy Now</button>
+            </div>
             <div className="product-info">
               <h4>Smartwatch</h4>
               <p>$100</p>
@@ -102,10 +135,14 @@ const TrendingAndRecommended = () => {
           </div>
           <div className="product-card">
             <img
-              src= {picture5}
+              src={picture5}
               alt="Smartwatch"
               className="product-image"
             />
+           <div className="hover-buttons">
+              <button onClick={() => navigate("/Details")}>View Details</button>
+          <button onClick={handleClick}>Buy Now</button>
+            </div>
             <div className="product-info">
               <h4>Smartwatch</h4>
               <p>$100</p>
@@ -117,6 +154,10 @@ const TrendingAndRecommended = () => {
               alt="Smartwatch"
               className="product-image"
             />
+            <div className="hover-buttons">
+              <button onClick={() => navigate("/Details")}>View Details</button>
+          <button onClick={handleClick}>Buy Now</button>
+            </div>
             <div className="product-info">
               <h4>Smartwatch</h4>
               <p>$100</p>
@@ -128,6 +169,10 @@ const TrendingAndRecommended = () => {
               alt="Smartwatch"
               className="product-image"
             />
+            <div className="hover-buttons">
+              <button onClick={() => navigate("/Details")}>View Details</button>
+          <button onClick={handleClick}>Buy Now</button>
+            </div>
             <div className="product-info">
               <h4>Smartwatch</h4>
               <p>$100</p>
@@ -139,6 +184,10 @@ const TrendingAndRecommended = () => {
               alt="Smartwatch"
               className="product-image"
             />
+            <div className="hover-buttons">
+              <button onClick={() => navigate("/Details")}>View Details</button>
+          <button onClick={handleClick}>Buy Now</button>
+            </div>
             <div className="product-info">
               <h4>Smartwatch</h4>
               <p>$100</p>
@@ -150,6 +199,10 @@ const TrendingAndRecommended = () => {
               alt="Smartwatch"
               className="product-image"
             />
+            <div className="hover-buttons">
+              <button onClick={() => navigate("/Details")}>View Details</button>
+          <button onClick={handleClick}>Buy Now</button>
+            </div>
             <div className="product-info">
               <h4>Smartwatch</h4>
               <p>$100</p>
@@ -161,6 +214,10 @@ const TrendingAndRecommended = () => {
               alt="Smartwatch"
               className="product-image"
             />
+            <div className="hover-buttons">
+              <button onClick={() => navigate("/Details")}>View Details</button>
+          <button onClick={handleClick}>Buy Now</button>
+            </div>
             <div className="product-info">
               <h4>Smartwatch</h4>
               <p>$100</p>
@@ -172,6 +229,10 @@ const TrendingAndRecommended = () => {
               alt="Smartwatch"
               className="product-image"
             />
+            <div className="hover-buttons">
+              <button onClick={() => navigate("/Details")}>View Details</button>
+          <button onClick={handleClick}>Buy Now</button>
+            </div>
             <div className="product-info">
               <h4>Smartwatch</h4>
               <p>$100</p>
@@ -183,6 +244,10 @@ const TrendingAndRecommended = () => {
               alt="Gaming Headset"
               className="product-image"
             />
+            <div className="hover-buttons">
+              <button onClick={() => navigate("/Details")}>View Details</button>
+          <button onClick={handleClick}>Buy Now</button>
+            </div>
             <div className="product-info">
               <h4>Gaming Headset</h4>
               <p>$80</p>
@@ -197,10 +262,14 @@ const TrendingAndRecommended = () => {
         <div className="product-slider">
           <div className="product-card">
             <img
-              src= {picture13}
+              src={picture13}
               alt="Bluetooth Speaker"
               className="product-image"
             />
+            <div className="hover-buttons">
+          <button onClick={() => navigate("/Details")}>View Details</button>
+          <button onClick={handleClick}>Buy Now</button>
+            </div>
             <div className="product-info">
               <h4>Bluetooth Speaker</h4>
               <p>$30</p>
@@ -212,6 +281,10 @@ const TrendingAndRecommended = () => {
               alt="Bluetooth Speaker"
               className="product-image"
             />
+            <div className="hover-buttons">
+              <button onClick={() => navigate("/Details")}>View Details</button>
+          <button onClick={handleClick}>Buy Now</button>
+            </div>
             <div className="product-info">
               <h4>Bluetooth Speaker</h4>
               <p>$30</p>
@@ -223,6 +296,10 @@ const TrendingAndRecommended = () => {
               alt="Bluetooth Speaker"
               className="product-image"
             />
+            <div className="hover-buttons">
+              <button onClick={() => navigate("/Details")}>View Details</button>
+          <button onClick={handleClick}>Buy Now</button>
+            </div>
             <div className="product-info">
               <h4>Bluetooth Speaker</h4>
               <p>$30</p>
@@ -234,6 +311,10 @@ const TrendingAndRecommended = () => {
               alt="Bluetooth Speaker"
               className="product-image"
             />
+            <div className="hover-buttons">
+              <button onClick={() => navigate("/Details")}>View Details</button>
+          <button onClick={handleClick}>Buy Now</button>
+            </div>
             <div className="product-info">
               <h4>Bluetooth Speaker</h4>
               <p>$30</p>
@@ -245,6 +326,10 @@ const TrendingAndRecommended = () => {
               alt="Bluetooth Speaker"
               className="product-image"
             />
+            <div className="hover-buttons">
+              <button onClick={() => navigate("/Details")}>View Details</button>
+          <button onClick={handleClick}>Buy Now</button>
+            </div>
             <div className="product-info">
               <h4>Bluetooth Speaker</h4>
               <p>$30</p>
@@ -256,6 +341,10 @@ const TrendingAndRecommended = () => {
               alt="Bluetooth Speaker"
               className="product-image"
             />
+            <div className="hover-buttons">
+              <button onClick={() => navigate("/Details")}>View Details</button>
+          <button onClick={handleClick}>Buy Now</button>
+            </div>
             <div className="product-info">
               <h4>Bluetooth Speaker</h4>
               <p>$30</p>
@@ -267,6 +356,10 @@ const TrendingAndRecommended = () => {
               alt="Bluetooth Speaker"
               className="product-image"
             />
+            <div className="hover-buttons">
+              <button onClick={() => navigate("/Details")}>View Details</button>
+          <button onClick={handleClick}>Buy Now</button>
+            </div>
             <div className="product-info">
               <h4>Bluetooth Speaker</h4>
               <p>$30</p>
@@ -278,6 +371,10 @@ const TrendingAndRecommended = () => {
               alt="Bluetooth Speaker"
               className="product-image"
             />
+            <div className="hover-buttons">
+              <button onClick={() => navigate("/Details")}>View Details</button>
+          <button onClick={handleClick}>Buy Now</button>
+            </div>
             <div className="product-info">
               <h4>Bluetooth Speaker</h4>
               <p>$30</p>
@@ -289,6 +386,10 @@ const TrendingAndRecommended = () => {
               alt="Bluetooth Speaker"
               className="product-image"
             />
+            <div className="hover-buttons">
+              <button onClick={() => navigate("/Details")}>View Details</button>
+          <button onClick={handleClick}>Buy Now</button>
+            </div>
             <div className="product-info">
               <h4>Bluetooth Speaker</h4>
               <p>$30</p>
@@ -300,6 +401,10 @@ const TrendingAndRecommended = () => {
               alt="Bluetooth Speaker"
               className="product-image"
             />
+            <div className="hover-buttons">
+              <button onClick={() => navigate("/Details")}>View Details</button>
+          <button onClick={handleClick}>Buy Now</button>
+            </div>
             <div className="product-info">
               <h4>Bluetooth Speaker</h4>
               <p>$30</p>
@@ -311,6 +416,10 @@ const TrendingAndRecommended = () => {
               alt="Bluetooth Speaker"
               className="product-image"
             />
+            <div className="hover-buttons">
+              <button onClick={() => navigate("/Details")}>View Details</button>
+          <button onClick={handleClick}>Buy Now</button>
+            </div>
             <div className="product-info">
               <h4>Bluetooth Speaker</h4>
               <p>$30</p>
@@ -322,6 +431,10 @@ const TrendingAndRecommended = () => {
               alt="Bluetooth Speaker"
               className="product-image"
             />
+            <div className="hover-buttons">
+              <button onClick={() => navigate("/Details")}>View Details</button>
+          <button onClick={handleClick}>Buy Now</button>
+            </div>
             <div className="product-info">
               <h4>Bluetooth Speaker</h4>
               <p>$30</p>
@@ -333,6 +446,10 @@ const TrendingAndRecommended = () => {
               alt="Bluetooth Speaker"
               className="product-image"
             />
+            <div className="hover-buttons">
+              <button onClick={() => navigate("/Details")}>View Details</button>
+          <button onClick={handleClick}>Buy Now</button>
+            </div>
             <div className="product-info">
               <h4>Bluetooth Speaker</h4>
               <p>$30</p>
@@ -344,6 +461,10 @@ const TrendingAndRecommended = () => {
               alt="Bluetooth Speaker"
               className="product-image"
             />
+            <div className="hover-buttons">
+              <button onClick={() => navigate("/Details")}>View Details</button>
+          <button onClick={handleClick}>Buy Now</button>
+            </div>
             <div className="product-info">
               <h4>Bluetooth Speaker</h4>
               <p>$30</p>
@@ -355,6 +476,10 @@ const TrendingAndRecommended = () => {
               alt="Fitness Tracker"
               className="product-image"
             />
+            <div className="hover-buttons">
+              <button onClick={() => navigate("/Details")}>View Details</button>
+          <button onClick={handleClick}>Buy Now</button>
+            </div>
             <div className="product-info">
               <h4>Fitness Tracker</h4>
               <p>$60</p>
@@ -366,6 +491,10 @@ const TrendingAndRecommended = () => {
               alt="Laptop Stand"
               className="product-image"
             />
+            <div className="hover-buttons">
+              <button onClick={() => navigate("/Details")}>View Details</button>
+          <button onClick={handleClick}>Buy Now</button>
+            </div>
             <div className="product-info">
               <h4>Laptop Stand</h4>
               <p>$25</p>
