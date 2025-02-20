@@ -3,12 +3,12 @@ import React from "react";
 const SocialMediaIcons = () => {
   const iconStyle = {
     position: "fixed",
-    top: "50%",
-    right: "20px",
+    top: "60%",
+    right: "10px",
     transform: "translateY(-50%)",
     display: "flex",
     flexDirection: "column",
-    gap: "20px",
+    gap: "5px",
   };
 
   const handleMessengerClick = () => {
